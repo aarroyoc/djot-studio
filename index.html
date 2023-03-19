@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="index.css"/>
+    <title>Djot Studio</title>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Djot Studio</h1>
+      <button onclick="document.getElementById('open').click();">Open file</button>
+      <input type="file" accept=".djot,.dj,.md,.txt" id="open" style="display:none;">
+      <button id="save-djot">Save Djot file</button>
+      <button id="save-html">Save HTML file</button>
+    </div>
+    <textarea id="source"></textarea>
+    <div id="output"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
